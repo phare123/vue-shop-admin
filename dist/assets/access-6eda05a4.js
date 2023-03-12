@@ -1,1 +1,0 @@
-import{b as t}from"./index-7aff1b23.js";const o=()=>t({url:"/rule/1",method:"get"}),u=e=>t({url:"/rule",method:"post",data:e}),r=e=>t({url:"/rule/193",method:"post",data:e}),a=e=>t({url:`/rule/${e}/delete`,method:"post"}),d=(e,s)=>t({url:`/rule/${e}/update_status`,method:"post",data:{status:s}});export{u as a,d as c,a as d,r as e,o as g};
