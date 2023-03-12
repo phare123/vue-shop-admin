@@ -1,7 +1,27 @@
-# Vue 3 + Vite
+# 项目名称
+商城后台管理系统
+-------------  
+#### 简介:
+vue-shop-admin 是一个商城后台管理系统,使用了最新的 Vue3、Vite、Element-Plus 等主流技术开发  
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+#### 相关预览
+![image](src\assets\vue.svg)
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 下载安装
+- 获取项目代码:  
+``` xml
+git clone https://gitee.com/luo-derong/vue3-shop-admin.git
+```
+- 安装依赖:  
+``` xml
+cd vue-shop-admin
+yarn install
+```
+- 运行:  
+``` xml
+yarn dev
+```
+- 打包:  
+``` xml
+yarn build
+```
