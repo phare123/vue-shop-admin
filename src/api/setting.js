@@ -7,4 +7,4 @@ export const getSetting = () => request({url:`/sysconfig`})
 export const changeSetting = (data) => request({url:`/sysconfig`,method:'post',data})
 
 // 上传文件
-export const uploadFileSrc = `/api/sysconfig/upload`
+export const uploadFileSrc =  import.meta.env.VITE_APP_BASE_API + `/sysconfig/upload`

@@ -6,7 +6,7 @@ import { getToken } from "../util/token";
 
 router.beforeEach(async(to, from, next) => {
   const token = getToken()
-  //没有token且要到达的不是i登录页，返回登录页
+  //没有token且要到达的不是登录页，返回登录页
   if (!token && to.path != "/login") {
     notification("请先登录", 3000, "error");
     next("/login");

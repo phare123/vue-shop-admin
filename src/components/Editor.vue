@@ -2,6 +2,7 @@
     <editor v-model="content" tag-name="div" :init="init" />
     <SelectImg :limit="100" @choose="handleChoose" ref="selectImgRef" :showPlusIcon="false" />
 </template>
+
 <script setup>
 import SelectImg from '@/components/manager/selectImg.vue'
 import tinymce from "tinymce/tinymce";

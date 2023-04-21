@@ -6,8 +6,8 @@ import "nprogress/nprogress.css";
 import store from "../store";
 
 const service = axios.create({
-  baseURL: "/api",
-  timeout: 3000,
+  baseURL: import.meta.env.VITE_APP_BASE_API,
+  timeout: 3000,  
 });
 
 service.interceptors.request.use(

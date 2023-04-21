@@ -23,4 +23,4 @@ export const reNameImg = (id,name) => request({url:`/image/${id}`,method:'post',
 export const delImg = (ids) => request({url:'/image/delete_all',method:'post',data:{ids}})
 
 // 上传图片
-export const uploadSrc = '/api/image/upload'
+export const uploadSrc = import.meta.env.VITE_APP_BASE_API + '/image/upload'
