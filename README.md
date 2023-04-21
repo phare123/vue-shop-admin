@@ -1,11 +1,13 @@
 # 项目名称
 商城后台管理系统
+### 在线预览
+https://luodedrong.netlify.app
 -------------  
 #### 简介:
 vue-shop-admin 是一个商城后台管理系统,使用了最新的 Vue3、Vite、Element-Plus 等主流技术开发  
 
 #### 相关预览
-![image](src\assets\vue.svg)
+![输入图片说明](src/assets/web.png)
 
 ### 下载安装
 - 获取项目代码:  
