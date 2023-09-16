@@ -19,12 +19,13 @@
             </div>
             <el-form ref="formRef" status-icon :rules="rules" :model="form">
                 <el-form-item prop="username">
-                    <el-input v-model="form.username" placeholder="请输入用户名" :prefix-icon="User" />
+                    <el-input v-model="form.username" placeholder="请填写账号名称" :prefix-icon="User" />
                 </el-form-item>
                 <el-form-item prop="password">
-                    <el-input v-model="form.password" show-password type="password" placeholder="请输入密码"
+                    <el-input v-model="form.password" show-password type="password" placeholder="请填写账号密码"
                         :prefix-icon="Lock" />
                 </el-form-item>
+
                 <el-form-item>
                     <el-button round color="#6366f1" type="primary" :loading="loading" @click="onSubmit">登 录</el-button>
                 </el-form-item>
@@ -38,7 +39,7 @@ import { reactive, ref } from "@vue/reactivity";
 import { User, Lock } from '@element-plus/icons-vue'
 import { useRouter } from "vue-router";
 import { useStore } from 'vuex'
-import {  onBeforeUnmount, onMounted } from "@vue/runtime-core";
+import { onBeforeUnmount, onMounted } from "@vue/runtime-core";
 import { notification } from "../../util/msgTip";
 
 const store = useStore()
@@ -70,7 +71,7 @@ const onSubmit = () => {
         loading.value = true
 
         store.dispatch("login", form).then(res => {
-            notification("登录成功",3000,'success')
+            notification("登录成功", 3000, 'success')
             router.replace("/")
         }).finally(() => {
             loading.value = false
@@ -79,14 +80,14 @@ const onSubmit = () => {
 }
 // 键盘事件
 const onKeyUp = (e) => {
-        if (e.key == 'Enter') onSubmit()
-    }
-    onMounted(() => {
-        document.addEventListener('keyup', onKeyUp)
-    })
-    onBeforeUnmount(() => {
-        document.removeEventListener('keyup', onKeyUp)
-    })
+    if (e.key == 'Enter') onSubmit()
+}
+onMounted(() => {
+    document.addEventListener('keyup', onKeyUp)
+})
+onBeforeUnmount(() => {
+    document.removeEventListener('keyup', onKeyUp)
+})
 </script>
 
 <style lang="less" scoped>

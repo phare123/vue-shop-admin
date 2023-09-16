@@ -263,6 +263,7 @@ const tabs = ([
 const category_list = ref([])
 const getCategoryData = () => {
     getCategory().then(res => {
+        console.log(res);
         category_list.value = res.data
     })
 }

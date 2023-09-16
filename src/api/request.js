@@ -10,6 +10,7 @@ const service = axios.create({
   timeout: 3000,  
 });
 
+
 service.interceptors.request.use(
   (config) => {
     nprogress.start()

@@ -56,7 +56,6 @@ const store = createStore({
         Login(form)
           .then((res) => {
             setToken(res.data.token);
-
             resolve(res);
           })
           .catch((err) => reject(err));
